@@ -3,13 +3,14 @@ body {
     'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
     margin: 0;
+    background-color: whitesmoke;
 }
 
 #header {
-    background-color: whitesmoke;
     display: flex;
     position: sticky;
     top: 0;
+    background-color: whitesmoke;
 }
 
 #header-img {
@@ -20,7 +21,7 @@ body {
     flex-grow: 1;
 }
 
-ul {
+#header ul {
     margin-top: 0;
     height: 100%;
     list-style: none;
@@ -29,14 +30,8 @@ ul {
     align-items: center;
 }
 
-li {
+#header li {
     margin-right: 75px;
-}
-
-.container {
-    box-sizing: border-box;
-    background-color: whitesmoke;
-    margin: 0 250px;
 }
 
 #get-started {
@@ -56,7 +51,7 @@ li {
 
 #get-started input[type='submit'] {
     margin-top: 20px;
-    border: 0;
+    border: thin solid black;
     font-weight: 800;
     width: 150px;
     height: 30px;
@@ -76,30 +71,67 @@ li {
 }
 
 #features {
-    margin-top: 100px;
-    background-color: coral;
+    margin-top: 10%;
+    background-color: #37af65;
 }
 
-.feature {
-    display: flex;
-    /*justify-content: center;*/
-
+.feature-grid {
+    display: grid;
+    grid-template-areas:
+      "feat-img feat-text"
+      "feat-img feat-text"
+      "feat-img feat-text";
+    grid-row-gap: 50px;
+    justify-items: center;
+    /*grid-column-gap: 40px;*/
 }
 
-.feature img {
-    width: 64px;
+.feature-img {
+    /*width: 64px;*/
     height: 64px;
-    margin-right: 100px;
+    grid-area: feat-img;
+}
+
+@media (max-width: 480px) {
+    .feature img {
+        position: absolute;
+        opacity: 0;
+    }
 }
 
 .feature-text {
-
+    grid-area: feat-text;
 }
 
-#video {
-    margin-top: 500px;
+.feature-text h2{
+    font-weight: bolder;
+}
+
+#preview {
+    margin-top: 200px;
 }
 
 #footer {
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 20px;
+}
+
+#footer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+#footer span {
+    color: grey;
 }
