@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+#navbar {
+    background-color: #be3144;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid black 1px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+#navbar a {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+li:hover {
+    background-color: darkred;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    background-image: linear-gradient(
+            62deg, #3a3d40 0%, #181719 100%);
+
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 3em;
+}
+
+p {
+    color: #be3144;
+    font-size: 1.5em;
+}
+
+#projects {
+    background-color: #495057;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2rem;
+}
+
+#projects h1 {
+    color: white;
+    border-bottom: white solid 2px;
+    font-size: 2.5em;
+    margin-bottom: 80px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
+    grid-column-gap: 4rem;
+}
+
+.project-title {
+    padding: 20px 5px;
+    background-color: #3a3d40;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.code {
+    transition: color 0.3s ease-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projects-grid p {
+    color: white;
+}
+
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    background-image: linear-gradient(
+            62deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;
+}
+
+#contact-me h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+#contact-me p {
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.contact-details {
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+}

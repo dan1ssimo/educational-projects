@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Portfolio Webpage</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="personal_portfolio.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
 </head>
 <body>
+    <nav id="navbar">
+        <ul>
+            <li><a>About</a></li>
+            <li><a>Work</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hey, I am Danil</h1>
+        <p>a web developer</p>
+    </section>
+    <section id="projects">
+        <h1>These are some of my projects</h1>
+        <div class="projects-grid">
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">/&gt;</span>
+                </p>
+            </a>
+        </div>
+    </section>
+    <section id="contact-me">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+        <div class="contact-links">
+            <a id="profile-link"
+               href="https://github.com/dan1ssimo"
+               target="_blank"
+               class="contact-details">
+                <i class="fab fa-github"></i> GitHub</a>
+            <a id="email-link"
+               href="mailto:danildorofeev200@gmail.com"
+               target="_blank"
+               class="contact-details">
+                <i class="fas fa-at"></i> Email</a>
+            <a id="telegram-link"
+               href="https://t.me/Crimson_Haze"
+               target="_blank"
+               class="contact-details">
+                <i class="fab fa-telegram"></i> Telegram</a>
+
+        </div>
+    </section>
 
 </body>
 </html>
